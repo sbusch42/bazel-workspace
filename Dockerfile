@@ -12,9 +12,6 @@ RUN apt-get -y -q update && \
 	apt-get -y install bazel && \
 	rm -rf /var/lib/apt/lists/*
 
-RUN groupadd -r -g 1000 bazel && useradd -r --home-dir /bazel --create-home -g bazel -u 1000 bazel
-
-USER bazel:bazel
 WORKDIR /bazel
 
 ENTRYPOINT /bin/bash
