@@ -19,7 +19,6 @@ Code-Generation:
 
 # Questions
 - Setup a build environment using the Dockerfile and scripts.
-- Make yourself familiar with the workspace, give a short overview of the bazel project.
 - In `src/c` you will find a simple CMake project. Please derive a `BUILD` file that defines the targets `a-lib` and `a`. Build and run target `//src/a:a`?
 - How do you figure out the actual compile (gcc) and link (ld) commands that bazel runs when building `//src/a:a`?
 - Try to build `//src/b:b`. Why is the build failing? How can you fix it?
