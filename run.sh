@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run --rm -it -v $PWD:/bazel bazel-workspace
+docker run --rm -it -v $PWD:/bazel ghcr.io/sbusch42/bazel-workspace
