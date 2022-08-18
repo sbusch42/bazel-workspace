@@ -1,5 +1,5 @@
 # Overview
-This is an artifical bazel workspace, containing a small number of C++ packages. Each package contains a library and an executable:
+This is an artifical bazel/cmake workspace, containing a small number of C++ packages. Each package contains a library and an executable:
 
 - `//src/a`
 - `//src/b`
@@ -19,8 +19,7 @@ Code-Generation:
 
 # Questions
 - Setup a build environment using the Dockerfile and scripts.
-- Make yourself familiar with the workspace, give a short overview of the bazel project.
-- How do you build and run target `//src/a:a`?
+- In `src/c` you will find a simple CMake project. Please derive a `BUILD` file that defines the targets `a-lib` and `a`. Build and run target `//src/a:a`?
 - How do you figure out the actual compile (gcc) and link (ld) commands that bazel runs when building `//src/a:a`?
 - Try to build `//src/b:b`. Why is the build failing? How can you fix it?
 - How can you query for all dependencies of `//src/b:b`?
