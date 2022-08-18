@@ -11,5 +11,6 @@ cc_binary(
     srcs = ["c.cc"],
     deps = [
         ":c-lib",
+        "@dynamic_packages_repository//src/d:d-lib"
     ],
 )
